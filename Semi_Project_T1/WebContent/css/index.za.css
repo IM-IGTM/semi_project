@@ -4,8 +4,15 @@ body {
 	margin: 0px;
 	padding: 0px;
 	background-color: white;
-	position: static;
-	font-family: 'Roboto', sans-serif;
+	position: static; 
+	font-family:'Mate SC','Gothic A1', sans-serif;
+}
+
+#site {
+	width: 60%;
+	height: 100px;
+	margin: auto;
+	text-align: center;
 }
 
 h1 {
