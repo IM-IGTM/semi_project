@@ -35,8 +35,9 @@ public class CoffeDAO {
 				c.setC_no(rs.getInt("c_no"));
 				c.setC_img(rs.getString("c_img"));
 				c.setC_title(rs.getString("c_title"));
-				c.setC_price(rs.getString("c_price"));
+				c.setC_price(rs.getInt("c_price"));
 				c.setC_explain(rs.getString("c_explain"));
+				c.setC_origin(rs.getString("c_origin"));
 				/*
 				 * c.setC_origin(rs.getString("c_origin"));
 				 * c.setC_Information(rs.getString("c_Information"));

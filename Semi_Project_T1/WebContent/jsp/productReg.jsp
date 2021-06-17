@@ -33,24 +33,24 @@
 
 			<tr>
 				<td>커피 이름</td>
-				<td><input name="title" value=${c.c_title }></td>
+				<td><input name="title"></td>
 			</tr>
 			<tr>
 				<td>커피 가격</td>
-				<td><input name="price" value=${c.c_pricce }></td>
+				<td><input name="price"></td>
 			</tr>
 			<tr>
 				<td>커피 사진</td>
 				<td><img src="img/${c.c_img}" width="100px;"><br> <input
-					type="file" name="file" value="${c.c_img}"></td>
+					type="file" name="file"></td>
 			</tr>
 			<tr>
 				<td>커피 설명</td>
-				<td><textarea name="explain">${c.c_explain } </textarea></td>
+				<td><textarea name="explain"> </textarea></td>
 			</tr>
 			<tr>
 			<td>커피 원산지</td>
-			<td><input name="origin" value=${c.c_origin}></td>
+			<td><input name="origin" ></td>
 				<%-- <td><input name="no" value="${param.no}" type="hidden">
 				</td> --%>
 

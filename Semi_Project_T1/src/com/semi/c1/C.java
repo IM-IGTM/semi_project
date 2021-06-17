@@ -135,18 +135,18 @@ public class C {
 
 			MultipartRequest mr = new MultipartRequest(request, saveDirectory, 31457280, "utf-8",
 					new DefaultFileRenamePolicy());
-
+			System.out.println("등록!");
 			String name = mr.getParameter("title");
 			int price = Integer.parseInt(mr.getParameter("price"));
 			String explain = mr.getParameter("explain");
 			String fname = mr.getFilesystemName("file");
-			String origin = mr.getFilesystemName("origin");
+			String origin = mr.getParameter("origin");
 
 			pstmt.setString(1, name);
 			pstmt.setInt(2, price);
 			pstmt.setString(3, fname);
-			pstmt.setString(4, explain);
-			pstmt.setString(5, origin);
+			pstmt.setString(4, origin);
+			pstmt.setString(5, explain);
 
 			if (pstmt.executeUpdate() == 1) {
 				request.setAttribute("r", "등록성공");
