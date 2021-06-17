@@ -6,12 +6,9 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
-<style type="text/css">
-div{
-border : 1px solid black;
-float: left;
-}
-</style>
+<link rel="stylesheet" href="../css/oction.za.css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;200&family=Nanum+Gothic&display=swap" rel="stylesheet">
 
 </head>
 <body>
@@ -54,13 +51,13 @@ float: left;
          </tr>
          
          <tr>
-            <td align="right">(최소주문수량1개이상)</td>
+            <td align="right">(최소 주문 수량 1개 이상)</td>
          </tr>
 </table>
-            <table id="cTb2" border="2">
+            <table id="cTb2">
                <tr>
                   <td>추가 구성상품</td>
-                  <td>추가로 구매를 원하시면 선택하세요</td>
+                  <td id="ss">~추가로 구매를 원하시면 선택하세요~</td>
                </tr>
                <tr>
                   <td>이미지</td>
@@ -85,30 +82,24 @@ float: left;
                </tr>
                </table>
              
-             
-             
-             
-             
-             
-             
           <table>
                          <tr> 
            <td> 
-               <input type="submit" onclick="return check()" name="buynow" value="지금구매">
-                  Buy now
+               <button type="submit" onclick="return check()" class="subut" name="buynow" value="지금구매">
+                  Buy now</button>
                 
                  
           </td> 
            
           <td>
-              <input type="submit" onclick="return addtocart()" name="atc" value="카트추가">
+              <button type="submit" onclick="return addtocart()" class="subut" name="atc" value="카트추가">
                   Add to Cart
-               
+               </button>
                
             </td>
             <td>
-              <input type="submit" onclick="return wishlist()" name="wl" value="위시리스트">
-                  Wish list
+              <button type="submit" onclick="return wishlist()" class="subut" name="wl" value="위시리스트">
+                  Wish list</button>
              
                
             </td>

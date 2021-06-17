@@ -1,31 +1,22 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-    <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
-<style type="text/css">
-div{
-border : 1px solid black;
-float: left;
-}
-</style>
-
+<link rel="stylesheet" href="../css/oction.za.css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;200&family=Nanum+Gothic&display=swap" rel="stylesheet">
 </head>
 <body>
-
-   <form action="BuyNowController" onsubmit="return check();" name="myform">
-
+   <form action="BuyNowController">
       <div style="width: 400px; height: 500px;">
 
 
-<img src="img/${c.c_img }">
+여기가 이미지여기도 이미지여기도 이미지여기도 이미지여기도 이미지여기도 이미지여기도 이미지<img src="img/${m.m_img }">
             
       </div>
-
-
       <table id="cTdl1">
          <tr>
             <td>상품명</td>
@@ -37,17 +28,17 @@ float: left;
          </tr>
          <tr>
             <td>원산지</td>
-            <%-- <td>${c.c_orgin}</td> --%>
+            <td>${c.c_orgin}</td>
          </tr>
          <tr>
             <td>상품간단정보</td>
-            <td>${c.c_explain}</td>
+            <td>${c.c_information }</td>
          </tr>
                   
          <tr>
             <td>중량</td>
             <td><select name="weight">
-                 <option value="">--필수입력--</option>
+                  <option value="weight0">--필수입력--</option>
                   <option value="weight1">200g</option>
                   <option value="weight2">500g</option>
                   <option value="weight3">1kg</option>
@@ -59,10 +50,10 @@ float: left;
             <td align="right">(최소주문수량1개이상)</td>
          </tr>
 </table>
-            <table id="cTb2" border="2">
+            <table id="cTb2">
                <tr>
                   <td>추가 구성상품</td>
-                  <td>추가로 구매를 원하시면 선택하세요</td>
+                  <td id="ss">~추가로 구매를 원하시면 선택하세요~</td>
                </tr>
                <tr>
                   <td>이미지</td>
@@ -79,50 +70,35 @@ float: left;
                <tr>
                   <td>사이즈</td>
                   <td><select name="size">
-                        <option value="">--필수입력--</option>
+                        <option value="size0">--필수입력--</option>
                         <option value="size1">소</option>
                         <option value="size2">대</option>
 
                   </select></td>
                </tr>
                </table>
-             
-             
-             
-             
-             
-             
-             
           <table>
-                         <tr> 
+               <tr> 
            <td> 
-               <!--  <button onclick="location.href='BuyNowController'">
-                  Buy now</button>  -->
-                 <button >
+                 <button name="bn">
                   Buy now</button> 
                  
           </td> 
            
           <td>
-              <button onclick="addtocart()" name="atc" value="1">
-                  Add to Cart</button>
-               <!--  <button name="atc" value="1">
-                  Add to Cart</button>  -->
+                <button onclick="addtocart()" name="atc" value="1">
+                  Add to Cart</button> 
                
             </td>
             <td>
               <button onclick="wishlist()" name="wl" value="1">
                   Wish list</button> 
-             <!--  <button name="wl" value="1">
-                  Wish list</button> --> 
                
             </td>
              
          </tr>
             </table> 
-            
 
-             
 </form>
     
  

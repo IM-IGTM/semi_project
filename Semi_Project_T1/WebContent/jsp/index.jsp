@@ -25,9 +25,14 @@
 		<ul class="container">
 			<li class="mainS"><a href="ProductController">Product</a></li>
 			<li class="mainS"><a href="EventController">Event</a></li>
+<<<<<<< HEAD
 			<li class="siteMenu" align="center"><a href="ProductRegController">Register</a></li>
 			<li class="mainS">
 		<a href="HC2">Login</a>
+=======
+			<li class="siteMenu"><a href="ProductRegController">Register</a></li>
+			<li class="mainS"><a href="HC2">Login</a>
+>>>>>>> branch 'main' of https://github.com/IM-IGTM/semi_project.git
 			</li>
 			</ul>
 	</nav>

@@ -7,29 +7,20 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
-<style>
+<link rel="stylesheet" href="css/productReg.za.css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Mate+SC&display=swap" rel="stylesheet">
 
-#ttt {
-	float: left;
-	width: 300px;
-	margin: 30px;
-	text-align: center;
-}
-
-#mTbl {
-	margin-left: auto;
-	margin-right: auto;
-}
-</style>
 </head>
 <body>
 	${r}
-
+	
 	<h4>상품 등록 페이지</h4>
-
+	<p>
+<hr>
 	<form action="ProductRegController" method="post"
 		enctype="multipart/form-data">
-		<table id="mTbl" border="1">
+		<table id="mTbl" >
 
 			<tr>
 				<td>커피 이름</td>
@@ -37,7 +28,7 @@
 			</tr>
 			<tr>
 				<td>커피 가격</td>
-				<td><input name="price" value=${c.c_pricce }></td>
+				<td><input name="price" value=${m.m_actor }></td>
 			</tr>
 			<tr>
 				<td>커피 사진</td>
@@ -49,11 +40,8 @@
 				<td><textarea name="explain">${c.c_explain } </textarea></td>
 			</tr>
 			<tr>
-			<td>커피 원산지</td>
-			<td><input name="origin" value=${c.c_origin}></td>
-				<%-- <td><input name="no" value="${param.no}" type="hidden">
-				</td> --%>
-				<!-- c_origin varchar2(30 char) 디비에 추가 안했음! -->
+				<td><input name="no" value="${param.no}" type="hidden">
+				</td>
 			</tr>
 			<tr>
 				<td colspan="2"><button>등록</button></td>

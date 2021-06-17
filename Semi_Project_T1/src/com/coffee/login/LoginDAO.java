@@ -127,8 +127,6 @@ public class LoginDAO {
 			pstmt.setString(1, regID);
 			rs = pstmt.executeQuery();
 			if (rs.next()) {
-			//	String dbID = rs.getString("m_regID");
-			//	if (dbID.equals(regID)) {
 
 				request.setAttribute("result2", "중복된 아이디가 존재합니다.");
 				} else {
