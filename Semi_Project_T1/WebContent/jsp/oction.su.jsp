@@ -19,7 +19,7 @@ float: left;
       <div style="width: 400px; height: 500px;">
 
 
-여기가 이미지여기도 이미지여기도 이미지여기도 이미지여기도 이미지여기도 이미지여기도 이미지<img src="img/${m.m_img }">
+<img src="img/${m.m_img }">
             
       </div>
 
@@ -35,11 +35,11 @@ float: left;
          </tr>
          <tr>
             <td>원산지</td>
-            <td>${c.c_orgin}</td>
+            <td>${c.c_origin}</td>
          </tr>
          <tr>
             <td>상품간단정보</td>
-            <td>${c.c_information }</td>
+            <td>${c.c_explain }</td>
          </tr>
                   
          <tr>

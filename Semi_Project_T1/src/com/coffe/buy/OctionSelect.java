@@ -14,7 +14,7 @@ public class OctionSelect extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 	
 		CoffeDAO.getCoffee(request);
-		request.setAttribute("contentPage", "oction.jsp");
+		request.setAttribute("contentPage", "oction.su.jsp");
 		request.getRequestDispatcher("jsp/index.jsp").forward(request, response);
 		
 	
