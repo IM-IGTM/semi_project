@@ -17,7 +17,7 @@
 <body>
 
 	<header>
-		<h1><a href="HC">Coffee</a></h1>
+		<h1><a href="HC">Coffee </a></h1>
 	</header>
 
 	<nav>
