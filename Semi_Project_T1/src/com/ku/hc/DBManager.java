@@ -21,7 +21,7 @@ public class DBManager {
 		//context.xml
 		Context ctx =new InitialContext();
 		//Connection 대여소--튜브 대여소--유지보수하기 위해 이 프로그램으 사용
-		DataSource ds=(DataSource) ctx.lookup("java:comp/env/ish");
+		DataSource ds=(DataSource) ctx.lookup("java:comp/env/za");
 		return ds.getConnection();
 	}
 	
