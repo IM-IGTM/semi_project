@@ -1,0 +1,51 @@
+@charset "UTF-8";
+
+body {
+   font-family: 'Gothic A1', sans-serif;
+   text-align: center;
+}
+
+.myForm {
+   width: 300px;
+   margin-right: 100px;
+   margin-top: 50px;
+   margin-bottom: 50px;
+   margin-left: 100px;
+
+}
+
+#regTbl {
+    padding:30px;
+   font-size: 14px;
+   width: 700px;
+   border-style: solid;
+   border-width: 1px; 
+   border-radius : 10px;
+   margin: 0 auto;
+   border-radius: 10px;
+   text-align: center !important;
+}
+
+.reg_td{
+    padding: 10px;
+}
+
+
+button {
+   text-align: center;
+   color: white;
+   background-color: #D8C8B2;
+   margin: 20px auto;
+   max-width: 150px;
+   border-radius: 4px;
+   display: inline-block;
+   position: relative;
+   bottom: auto;
+   right: auto;
+   width: 300px;
+   font-size: 14px;
+   width: 100%;
+   border-radius: 5px;
+   padding: 10px;
+   border: none;
+}

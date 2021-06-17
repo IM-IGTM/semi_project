@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+body {
+	margin: 0px;
+	padding: 0px;
+	background-color: white;
+	position: static;
+	font-family: 'Mate SC', 'Gothic A1', sans-serif;
+}
+
+#ttt {
+	float: left;
+	width: 300px;
+	margin: 30px;
+	text-align: center;
+}
+
+#p_title {
+	text-align: center;
+}
+
+h1 {
+	text-align: center;
+}
+
+ul {
+	text-align: center;
+}
+
+li {
+	display: inline-block;
+	margin: 20px;
+	margin-bottom: 50px;
+}
+
+td {
+	text-align: center;
+}
+
+a {
+	color: black;
+	text-decoration: none;
+	font-style: initial;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
