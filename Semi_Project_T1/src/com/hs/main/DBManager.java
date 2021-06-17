@@ -16,15 +16,14 @@ import javax.sql.DataSource;
 // AOP
 public class DBManager {
 
-	public static Connection connect() throws NamingException, SQLException {
-		
-		// context.xml
-		Context ctx = new InitialContext();
-		
-		// Connection 대여소
-		DataSource ds = (DataSource) ctx.lookup("java:comp/env/hsz");
-		return ds.getConnection();
-	}
+	/*
+	 * public static Connection connect() throws NamingException, SQLException {
+	 * 
+	 * // context.xml Context ctx = new InitialContext();
+	 * 
+	 * // Connection 대여소 DataSource ds = (DataSource)
+	 * ctx.lookup("java:comp/env/hsz"); return ds.getConnection(); }
+	 */
 	
 	// 프로젝트 -> 코드 -> 배포 -> 서비스 시작
 	
@@ -41,11 +40,13 @@ public class DBManager {
 	/*
 	 * 이제 안씀
 	 * 
-	 * // DB작업시엔 어쨌든 연결 해야됨 public static Connection connect() throws SQLException {
-	 * String url = "jdbc:oracle:thin:@localhost:1521:xe";
-	 * 
-	 * return DriverManager.getConnection(url, "hs", "hs"); }
-	 */
+	 * // DB작업시엔 어쨌든 연결 해야됨 
+	 * */
+	 public static Connection connect() throws SQLException {
+	  String url = "jdbc:oracle:thin:@localhost:1521:xe";
+	  
+	  return DriverManager.getConnection(url, "hs", "hs"); }
+	 
 	
 	
 	// 닫을게 많은데 한번에 닫기 

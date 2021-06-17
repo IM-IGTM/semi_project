@@ -5,6 +5,7 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+<<<<<<< HEAD
 <script type="text/javascript" src="checkList_login.js"></script>
 <script type="text/javascript" src="validCheck.js"></script>
 
@@ -25,12 +26,14 @@
 <body>
 	<form action="RegController" method="post" name="myForm"
 		onsubmit="return check();">
-		${result2}
+${result2}		
 		<table border="1" id="regTbl" width="400px" height="600px">
 			<tr>
 				<td class="reg_td">아이디</td>
 				<td><input type="text" name="regID"></td>
-				<td></td>
+				<td>	
+				<button onclick="checkId2();">아이디 중복확인</button>
+				</td>
 			</tr>
 			<tr>
 				<td class="reg_td">비밀번호</td>
@@ -77,6 +80,7 @@
 
 </form>
 
-<button onclick="checkId2();">아이디 중복확인</button>
+=======
+
 </body>
 </html>

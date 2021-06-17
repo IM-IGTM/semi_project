@@ -45,7 +45,7 @@ public class LoginDAO {
 					hs.setMaxInactiveInterval(5);
 
 					hs.setAttribute("member", m);
-					hszzang = "location.href='index.html'";
+					hszzang = "location.href='jsp/index.jsp'";
 					request.setAttribute("hszzang", hszzang);
 				} else {
 					request.setAttribute("result", "비밀번호 오류!");
