@@ -8,22 +8,22 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 
-@WebServlet("/RegController")
-public class RegController extends HttpServlet {
+@WebServlet("/RegUpdateController")
+public class RegUpdateController extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
 	
-		request.getRequestDispatcher("jsp/reg_hs.jsp").forward(request, response);
-		
-		
+	
 	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
-	LoginDAO.reg(request);
+		LoginDAO.update(request);
+
 		
-	request.getRequestDispatcher("jsp/regOutput_hs.jsp").forward(request, response);
-	
+		
+		request.getRequestDispatcher("jsp/mypage.jsp").forward(request, response);
+		
 	
 	}
 
