@@ -7,7 +7,9 @@
 <title>Insert title here</title>
 <link rel="stylesheet" href="css/index.za.css">
 <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Mate+SC&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@200&display=swap" rel="stylesheet">
 </head>
 <body>
 
