@@ -28,7 +28,7 @@ public class BuyNowController extends HttpServlet {
 		
 		}
 		
-		request.getRequestDispatcher("jsp/index.jsp").forward(request, response);
+		request.getRequestDispatcher("jsp/index2.za.jsp").forward(request, response);
 		
 		
 	}
@@ -45,7 +45,7 @@ public class BuyNowController extends HttpServlet {
 			request.setAttribute("contentPage", "login_hs.jsp");
 		}
 	
-		request.getRequestDispatcher("jsp/index.jsp").forward(request, response);
+		request.getRequestDispatcher("jsp/index2.za.jsp").forward(request, response);
 	
 			
 			

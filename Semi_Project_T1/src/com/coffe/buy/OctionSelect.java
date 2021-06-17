@@ -15,7 +15,7 @@ public class OctionSelect extends HttpServlet {
 	
 		CoffeDAO.getCoffee(request);
 		request.setAttribute("contentPage", "oction.su.jsp");
-		request.getRequestDispatcher("jsp/index.jsp").forward(request, response);
+		request.getRequestDispatcher("jsp/index2.za.jsp").forward(request, response);
 		
 	
 	}

@@ -15,7 +15,7 @@ public class ProductRegController extends HttpServlet {
 		
 		
 		request.setAttribute("contentPage", "productReg.jsp");
-		request.getRequestDispatcher("jsp/index.jsp").forward(request, response);
+		request.getRequestDispatcher("jsp/index2.za.jsp").forward(request, response);
 	}
 
 	
@@ -23,7 +23,7 @@ public class ProductRegController extends HttpServlet {
 	
 		C.regProduct(request);
 		request.setAttribute("contentPage", "product.jsp");
-		request.getRequestDispatcher("jsp/index.jsp").forward(request, response);
+		request.getRequestDispatcher("jsp/index2.za.jsp").forward(request, response);
 	}
 
 }

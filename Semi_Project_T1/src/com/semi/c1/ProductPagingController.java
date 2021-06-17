@@ -15,7 +15,7 @@ public class ProductPagingController extends HttpServlet {
 	
 		C.getAllCoffees2(request);
 		request.setAttribute("contentPage", "product.jsp");
-		request.getRequestDispatcher("jsp/index.jsp").forward(request, response);
+		request.getRequestDispatcher("jsp/index2.za.jsp").forward(request, response);
 		
 	}
 

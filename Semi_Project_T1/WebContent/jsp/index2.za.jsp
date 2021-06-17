@@ -22,12 +22,15 @@
 
 	<nav>
 
-		<ul class="container">
+				<ul class="container">
 			<li class="mainS"><a href="ProductController">Product</a></li>
 			<li class="mainS"><a href="EventController">Event</a></li>
+
 			<li class="siteMenu" align="center"><a href="ProductRegController">Register</a></li>
 			<li class="mainS">
-		<a href="">Login</a>
+		<a href="HC2">Login</a>
+
+
 			</li>
 			</ul>
 	</nav>

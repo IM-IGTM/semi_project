@@ -14,7 +14,7 @@ public class LoginController2 extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 	
 			request.setAttribute("contentPage", "login_hs.jsp");
-			request.getRequestDispatcher("jsp/index.jsp").forward(request, response);
+			request.getRequestDispatcher("jsp/index2.za.jsp").forward(request, response);
 	}
 
 	

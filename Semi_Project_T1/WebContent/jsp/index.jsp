@@ -30,8 +30,6 @@
 			<li class="mainS">
 		<a href="HC2">Login</a>
 
-			<li class="siteMenu"><a href="ProductRegController">Register</a></li>
-			<li class="mainS"><a href="HC2">Login</a>
 
 			</li>
 			</ul>
