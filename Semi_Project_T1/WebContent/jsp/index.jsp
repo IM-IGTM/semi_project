@@ -22,9 +22,8 @@
 
 		<ul class="container">
 			<li class="mainS"><a href="ProductController">Product</a></li>
-			<li class="mainS"><a href="">Event</a></li>
-			<li class="mainS"><a href="">Q&A</a></li>
-			<li class="siteMenu" align="center"><a href="ProductRegController">상품등록</a></li>
+			<li class="mainS"><a href="EventController">Event</a></li>
+			<li class="siteMenu" align="center"><a href="ProductRegController">Register</a></li>
 			<li class="mainS">
 		<a href="">Login</a>
 			</li>
