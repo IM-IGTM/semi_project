@@ -25,7 +25,7 @@
 <body>
 	${r}
 
-	<h4>상품 등록 페이지</h4>
+	<h3>상품 등록 페이지</h3>
 
 	<form action="ProductRegController" method="post"
 		enctype="multipart/form-data">
