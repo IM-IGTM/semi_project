@@ -13,6 +13,8 @@ public class RegController extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
 	
+		LoginDAO.checkId(request);
+		
 		request.getRequestDispatcher("jsp/reg_hs.jsp").forward(request, response);
 		
 		
