@@ -24,7 +24,7 @@
   <tr>
    <td><button >로그인</button></td>
 </form>
-<form action="reg.jsp" method="post">
+<form action="RegController" method="post">
    <td><button >회원가입</button></td>
  </form>
  </tr>
