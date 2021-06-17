@@ -29,3 +29,8 @@ select max(c_price)
 from coffee
 );
 
+drop table coffee cascade constraint purge;
+drop sequence coffee_seq;
+
+
+

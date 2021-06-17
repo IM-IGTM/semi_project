@@ -20,6 +20,7 @@
 }
 </style>
 </head>
+
 <body>
 	${r}
 	<p>
@@ -30,9 +31,9 @@
 	<hr>
 	<div id=p_list border="1">
 		total : ${fn:length(coffees)}<br> 
-		<a href= "ProductPagingController">상품명</a> 
-		<a href="ProductPagingController">높은가격순</a> 
-		<a href="ProductPagingController">낮은가격순</a>
+		<a href= "ProductPagingController?order=c_title">상품명</a> 
+		<a href="ProductPagingController?order=c_price desc">높은가격순</a> 
+		<a href="ProductPagingController?order=c_price">낮은가격순</a>
 
 	</div>
 

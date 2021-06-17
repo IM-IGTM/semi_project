@@ -13,7 +13,6 @@ public class ProductController extends HttpServlet {
 	
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
-		/* if() */
 		C.getAllCoffees(request);
 		request.setAttribute("contentPage", "product.jsp");
 		request.getRequestDispatcher("jsp/index.jsp").forward(request, response);

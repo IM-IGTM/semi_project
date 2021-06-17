@@ -25,8 +25,14 @@ public class C {
 
 		try {
 			con = DBManager.connect();
-
-			String sql = "select * from coffee order by c_title desc";
+			
+			String order = request.getParameter("order");
+			String sql = "select * from coffee order by " +order;
+			
+			
+			
+			
+			
 			pstmt = con.prepareStatement(sql);
 
 			rs = pstmt.executeQuery();
