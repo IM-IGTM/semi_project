@@ -49,7 +49,8 @@ public class C {
 
 				c.setC_no(rs.getInt("c_no"));
 				c.setC_title(rs.getString("c_title"));
-				c.setC_price(rs.getString("c_price"));
+				c.setC_price(rs.getInt("c_price"));
+				c.setC_origin(rs.getString("c_origin"));
 				c.setC_img(rs.getString("c_img"));
 				c.setC_explain(rs.getString("c_explain"));
 
@@ -94,7 +95,8 @@ public class C {
 
 				c.setC_no(rs.getInt("c_no"));
 				c.setC_title(rs.getString("c_title"));
-				c.setC_price(rs.getString("c_price"));
+				c.setC_price(rs.getInt("c_price"));
+				c.setC_origin(rs.getString("c_origin"));
 				c.setC_img(rs.getString("c_img"));
 				c.setC_explain(rs.getString("c_explain"));
 
@@ -125,7 +127,7 @@ public class C {
 
 			con = DBManager.connect();
 
-			String sql = "insert into coffee values (coffee_seq.nextval, ?,?,?,?)";
+			String sql = "insert into coffee values (coffee_seq.nextval, ?,?,?,?,?)";
 			pstmt = con.prepareStatement(sql);
 
 			String saveDirectory = request.getServletContext().getRealPath("img");
@@ -135,14 +137,16 @@ public class C {
 					new DefaultFileRenamePolicy());
 
 			String name = mr.getParameter("title");
-			String price = mr.getParameter("price");
+			int price = Integer.parseInt(mr.getParameter("price"));
 			String explain = mr.getParameter("explain");
 			String fname = mr.getFilesystemName("file");
+			String origin = mr.getFilesystemName("origin");
 
 			pstmt.setString(1, name);
-			pstmt.setString(2, price);
+			pstmt.setInt(2, price);
 			pstmt.setString(3, fname);
 			pstmt.setString(4, explain);
+			pstmt.setString(5, origin);
 
 			if (pstmt.executeUpdate() == 1) {
 				request.setAttribute("r", "등록성공");
@@ -170,7 +174,7 @@ public class C {
 		try {
 			con = DBManager.connect();
 
-			String sql = "select c_no, c_title, c_price, c_img, c_explain from coffee where c_price = (select max(c_price) from coffee)";
+			String sql = "select c_no, c_title, c_price, c_img, c_explain, c_origin from coffee where c_price = (select max(c_price) from coffee)";
 			pstmt = con.prepareStatement(sql);
 
 			rs = pstmt.executeQuery();
@@ -187,9 +191,10 @@ public class C {
 
 				c.setC_no(rs.getInt("c_no"));
 				c.setC_title(rs.getString("c_title"));
-				c.setC_price(rs.getString("c_price"));
+				c.setC_price(rs.getInt("c_price"));
 				c.setC_img(rs.getString("c_img"));
 				c.setC_explain(rs.getString("c_explain"));
+				c.setC_origin(rs.getString("c_origin"));
 
 				coffees.add(c);
 			}

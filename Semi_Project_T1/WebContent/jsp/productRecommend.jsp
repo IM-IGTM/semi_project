@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+	pageEncoding="UTF-8"%>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 
 <!DOCTYPE html>
@@ -8,17 +8,17 @@
 <meta charset="UTF-8">
 <title>Insert title here</title>
 <style>
-
 #t_rec {
 	float: left;
 	width: 300px;
 	margin: 30px;
-text-align: center;
+	text-align: center;
 }
 
 #p_title {
 	text-align: center;
 }
+
 #mTbl {
 	margin-left: auto;
 	margin-right: auto;
@@ -30,16 +30,17 @@ text-align: center;
 		<p>추천상품
 	</div>
 
-		<form action="ProductRecController" method="post"
+	<form action="ProductRecController" method="post"
 		enctype="multipart/form-data">
-		<table id="mTbl">
+
+
 
 		<c:forEach var="c" items="${coffees}">
-		<a href="ProductRecController?no">
-		<table border="1" id="t_rec">
+			<span onclick="location.href='OctionSelect?no=${c.c_no}'">
+				<table border="5" id="t_rec">
 					<tr>
-						<td id="p_td1"><img src="img/${c.c_img}"
-							width="100" height="100"></td>
+						<td id="p_td1"><img src="img/${c.c_img}" width="100"
+							height="100"></td>
 					</tr>
 
 
@@ -59,10 +60,10 @@ text-align: center;
 					</tr>
 
 				</table>
-				</a>
-			</c:forEach>
-		
-		</table>
+			</span>
+		</c:forEach>
+
+
 	</form>
 </body>
 </html>

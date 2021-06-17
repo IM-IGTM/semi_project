@@ -53,7 +53,7 @@
 			<td><input name="origin" value=${c.c_origin}></td>
 				<%-- <td><input name="no" value="${param.no}" type="hidden">
 				</td> --%>
-				<!-- c_origin varchar2(30 char) 디비에 추가 안했음! -->
+
 			</tr>
 			<tr>
 				<td colspan="2"><button>등록</button></td>

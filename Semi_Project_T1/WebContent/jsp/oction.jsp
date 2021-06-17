@@ -37,7 +37,7 @@ float: left;
          </tr>
          <tr>
             <td>원산지</td>
-            <%-- <td>${c.c_orgin}</td> --%>
+            <td>${c.c_origin}</td>
          </tr>
          <tr>
             <td>상품간단정보</td>
