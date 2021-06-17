@@ -59,7 +59,7 @@ float: left;
 </table>
             <table id="cTb2" border="2">
                <tr>
-                  <td>추가 구성상품</td>
+                  <td>추가 구성 상품</td>
                   <td>추가로 구매를 원하시면 선택하세요</td>
                </tr>
                <tr>
