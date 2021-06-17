@@ -7,25 +7,14 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
-<style>
+<link rel="stylesheet" href="css/productReg.za.css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Mate+SC&display=swap" rel="stylesheet">
 
-#ttt {
-	float: left;
-	width: 300px;
-	margin: 30px;
-	text-align: center;
-}
-
-#mTbl {
-	margin-left: auto;
-	margin-right: auto;
-}
-</style>
 </head>
 <body>
 	${r}
-
-	<h3>상품 등록 페이지</h3>
+	<h4>상품 등록 페이지</h4>
 
 	<form action="ProductRegController" method="post"
 		enctype="multipart/form-data">
@@ -51,7 +40,8 @@
 			<tr>
 			<td>커피 원산지</td>
 			<td><input name="origin" ></td>
-				
+				<%-- <td><input name="no" value="${param.no}" type="hidden">
+				</td> --%>
 
 			</tr>
 			<tr>
@@ -61,6 +51,5 @@
 
 		</table>
 	</form>
-
-</body>
+	</body>
 </html>

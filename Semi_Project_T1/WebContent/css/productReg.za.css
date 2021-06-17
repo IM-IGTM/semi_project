@@ -5,7 +5,7 @@ body {
 	padding: 0px;
 	background-color: white;
 	position: static;
-font-family: 'Mate SC', serif;
+	font-family: 'Mate SC',sans-serif;
 }
 
 #ttt {
@@ -24,14 +24,12 @@ font-family: 'Mate SC', serif;
 	padding: 20px;
 }
 
-#site{
+#site {
 	width: 60%;
 	height: 100px;
 	margin: auto;
 	text-align: center;
-	
 }
-
 
 h1 {
 	text-align: center;
@@ -61,7 +59,6 @@ a {
 	margin: 0;
 	padding: 0;
 }
-
 
 button {
 	color: white;
