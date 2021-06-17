@@ -6,8 +6,8 @@ import java.sql.ResultSet;
 
 import javax.servlet.http.HttpServletRequest;
 
-import com.ku.hc.DBManager;
 import com.semi.c1.Coffee;
+import com.semi.c1.DBManager;
 
 public class CoffeDAO {
 
@@ -17,7 +17,7 @@ public class CoffeDAO {
 		ResultSet rs = null;
 
 		try {
-			con = DBManager.connect();
+			con = com.semi.c1.DBManager.connect();
 			String sql = "select * from coffee where c_no=?";
 			pstmt = con.prepareStatement(sql);
 		

@@ -5,7 +5,7 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
-<<<<<<< HEAD
+
 <script type="text/javascript" src="checkList_login.js"></script>
 <script type="text/javascript" src="validCheck.js"></script>
 
@@ -80,7 +80,6 @@ ${result2}
 
 </form>
 
-=======
 
 </body>
 </html>

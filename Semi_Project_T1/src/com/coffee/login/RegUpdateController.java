@@ -19,9 +19,6 @@ public class RegUpdateController extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
 		LoginDAO.update(request);
-
-		
-		
 		request.getRequestDispatcher("jsp/mypage.jsp").forward(request, response);
 		
 	

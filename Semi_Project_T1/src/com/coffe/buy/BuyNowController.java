@@ -42,7 +42,7 @@ public class BuyNowController extends HttpServlet {
 			
 		}else if (request.getParameter("login")!=null) {
 			
-			request.setAttribute("contentPage", "login.jsp");
+			request.setAttribute("contentPage", "login_hs.jsp");
 		}
 	
 		request.getRequestDispatcher("jsp/index.jsp").forward(request, response);

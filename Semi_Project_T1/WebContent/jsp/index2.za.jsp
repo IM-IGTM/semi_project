@@ -32,7 +32,6 @@
 			</ul>
 	</nav>
 
-</div>
 
 	<table id="site">
 					<tr>

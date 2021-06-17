@@ -7,7 +7,7 @@ import java.util.ArrayList;
 
 import javax.servlet.http.HttpServletRequest;
 
-import com.jh.coffeeOrderMain.DBManager;
+import com.semi.c1.DBManager;
 
 public class CoffeeOrderDAO {
 	
@@ -16,7 +16,7 @@ public class CoffeeOrderDAO {
 		PreparedStatement pstmt = null;
 		
 		try {
-			con = DBManager.connect();
+			con = com.semi.c1.DBManager.connect();
 			request.setCharacterEncoding("utf-8");
 			
 			String sql = "insert into order_Coffee values (order_seq.nextval, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";

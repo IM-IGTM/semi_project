@@ -8,7 +8,8 @@ import java.util.ArrayList;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 
-import com.hs.main.DBManager;
+import com.semi.c1.DBManager;
+
 
 public class LoginDAO {
 
@@ -25,7 +26,7 @@ public class LoginDAO {
 		try {
 			String sql = "select * from regMember where m_regID = ?";
 
-			con = DBManager.connect();
+			con = com.semi.c1.DBManager.connect();
 			pstmt = con.prepareStatement(sql);
 
 			pstmt.setString(1, userID);
