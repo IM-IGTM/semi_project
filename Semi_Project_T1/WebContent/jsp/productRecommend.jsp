@@ -32,7 +32,7 @@ text-align: center;
 
 		<form action="ProductRecController" method="post"
 		enctype="multipart/form-data">
-		<table id="mTbl" border="1">
+		<table id="mTbl">
 
 		<c:forEach var="c" items="${coffees}">
 		<a href="ProductRecController?no">

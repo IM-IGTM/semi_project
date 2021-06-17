@@ -1,0 +1,55 @@
+@charset "UTF-8";
+body{
+	font-family: 'Gothic A1', sans-serif;
+	
+}
+div {
+	border: 1px solid black;
+	float: left;
+}
+div{
+	margin-bottom: 20px;
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-top: 20px;
+	
+}
+#cTdl1{
+width: 500;
+height: 250px;
+padding-bottom: 20px;
+padding-left: 15px;
+padding-right: 15px;
+padding-top: 20px;
+}
+#ss{
+	font-size: 13px;
+	
+}
+#cTb2 {
+	position: relative;
+	top: 50%;
+	left: 0%;
+	margin-top: 15px;
+	text-align: center;
+}
+
+button {
+	color:white;
+	background-color:#D8C8B2;
+	display: block;
+	margin: 20px auto;
+	max-width: 150px;
+	border-radius: 4px;
+	padding: 10px 20px;
+	position:relative;
+    bottom: auto;
+    right: auto;
+    width: 300px;
+}
+
+button:hover {
+	color: white;
+}
+
+
