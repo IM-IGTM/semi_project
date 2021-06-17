@@ -51,8 +51,7 @@
 			<tr>
 			<td>커피 원산지</td>
 			<td><input name="origin" ></td>
-				<%-- <td><input name="no" value="${param.no}" type="hidden">
-				</td> --%>
+				
 
 			</tr>
 			<tr>
