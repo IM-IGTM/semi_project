@@ -53,8 +53,8 @@ function change () {
 
 </script>
 
-<form name="form" method="get"  action="LoginController2">
-<table border="2" id=odrTl>
+<form name="form" method="get"  action="OrderHC">
+<table border="2" id=odrTl> 
 <tr>
 <td colspan="2" align="center">주문확인</td>
 </tr>
@@ -81,6 +81,9 @@ function change () {
 <tr>
 <td>수량 : <input type=hidden name="sell_price" value="${c.c_price }"> </td>
 <td><input type="text" name="amount" value="1" size="3" onchange="change();">
+<input type="hidden" name="title" value="${c.c_title}">
+<input type="hidden" name="weight" value="${param.weight }">
+<input type="hidden" name="size" value="${param.size }">
 <input type="button" value=" + " onclick="add();">
 <input type="button" value=" - " onclick="del();"> </td>
 </tr>
