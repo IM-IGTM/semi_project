@@ -16,7 +16,7 @@
       <div style="width: 400px; height: 500px;">
 
 
-여기가 이미지여기도 이미지여기도 이미지여기도 이미지여기도 이미지여기도 이미지여기도 이미지<img src="img/${m.m_img }">
+<img src="img/${c.c_img }">
             
       </div>
 
@@ -32,13 +32,13 @@
          </tr>
          <tr>
             <td>원산지</td>
-            <td>${c.c_orgin}</td>
+            <td>${c.c_origin}</td>
          </tr>
          <tr>
             <td>상품간단정보</td>
-            <td>${c.c_information }</td>
+            <td>${c.c_explain }</td>
          </tr>
-                  
+                  <input type="hidden" name="no" value="${c.c_no}">
          <tr>
             <td>중량</td>
             <td><select name="weight">
@@ -56,8 +56,13 @@
 </table>
             <table id="cTb2">
                <tr>
+
+                  <td>추가 구성 상품</td>
+                  <td>추가로 구매를 원하시면 선택하세요</td>
+
                   <td>추가 구성상품</td>
                   <td id="ss">~추가로 구매를 원하시면 선택하세요~</td>
+
                </tr>
                <tr>
                   <td>이미지</td>
@@ -85,21 +90,21 @@
           <table>
                          <tr> 
            <td> 
-               <button type="submit" onclick="return check()" class="subut" name="buynow" value="지금구매">
-                  Buy now</button>
+               <input type="submit" onclick="return check()" name="buynow" value="지금구매">
+                  
                 
                  
           </td> 
            
           <td>
-              <button type="submit" onclick="return addtocart()" class="subut" name="atc" value="카트추가">
-                  Add to Cart
-               </button>
+              <input type="submit" onclick="return addtocart()" name="atc" value="카트추가">
+                  
+               
                
             </td>
             <td>
-              <button type="submit" onclick="return wishlist()" class="subut" name="wl" value="위시리스트">
-                  Wish list</button>
+              <input type="submit" onclick="return wishlist()" name="wl" value="위시리스트">
+                  
              
                
             </td>
