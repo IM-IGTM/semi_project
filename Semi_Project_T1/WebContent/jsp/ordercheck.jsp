@@ -77,6 +77,7 @@ function change () {
 <td>${param.size }</td>
 </tr>
 
+
 <tr>
 <td>수량 : <input type=hidden name="sell_price" value="${c.c_price }"> </td>
 <td><input type="text" name="amount" value="1" size="3" onchange="change();">
