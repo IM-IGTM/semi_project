@@ -53,7 +53,7 @@ function change () {
 
 </script>
 
-<form name="form" method="get"  action="LoginController">
+<form name="form" method="get"  action="LoginController2">
 <table border="2" id=odrTl>
 <tr>
 <td colspan="2" align="center">주문확인</td>
@@ -65,8 +65,8 @@ function change () {
 </tr>
 <tr>
 <td>상품가격</td>
-<%-- <td>${c.c_price }</td> --%>
- <td>10000</td> 
+<td>${c.c_price }</td> 
+ <!-- <td>10000</td>  -->
 </tr>
 <tr>
 <td>중량</td>
@@ -78,7 +78,7 @@ function change () {
 </tr>
 
 <tr>
-<td>수량 : <input type=hidden name="sell_price" value="10000"> </td>
+<td>수량 : <input type=hidden name="sell_price" value="${c.c_price }"> </td>
 <td><input type="text" name="amount" value="1" size="3" onchange="change();">
 <input type="button" value=" + " onclick="add();">
 <input type="button" value=" - " onclick="del();"> </td>
